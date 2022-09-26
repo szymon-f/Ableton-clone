@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap');
 
+$main-bg-color: #e3dac9;
 $yellow: #fbffa7;
 $orange: #ff764d;
 $light-blue: #b1c5ff;
@@ -10,4 +11,64 @@ $dark-blue: #0000ff;
 * {
     font-family: 'Maven Pro';
     box-sizing: border-box;
+}
+
+body {
+    background-color: $main-bg-color;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*DO ZMIENIENIA*/
+img {
+    max-width: 500px;
+}
+/*KONIEC*/
+.main-container {
+    width: 85vw;
+    margin: 0 auto;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    border-bottom: 2px solid $main-bg-color;
+    font-weight: 500;
+    a {
+        display: inline-block;
+    }
+    .left-nav {
+        display: flex;
+        align-items: center;
+        gap: 1.8rem;
+        font-size: 1.2rem;
+        img {
+            width: 80px;
+            display: inline-block;
+        }
+
+        #more-btn {
+            color: $orange;
+        }
+    }
+    .right-nav {
+        display: flex;
+        display: flex;
+        align-items: baseline;
+        gap: 1.8rem;
+        font-size: 1rem;
+
+        #try-live {
+            font-size: 1.2rem;
+            color: $dark-blue;
+        }
+    }
 }
