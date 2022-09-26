@@ -24,6 +24,14 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: inline-block;
+    width: 100%;
+
+    // border-radius: .2rem;
+    // box-shadow: 8px 8px 20px 0px rgba(66, 68, 90, 1);
+}
+
 .main-container {
     width: 85vw;
     margin: 0 auto;
@@ -69,7 +77,6 @@ nav {
 }
 
 section {
-    // margin: 2rem 0;
     padding: 4rem 0;
     display: flex;
     flex-direction: column;
@@ -115,10 +122,6 @@ section {
     margin-top: 1rem;
     .hero-img-container {
         margin-bottom: 5rem;
-        img {
-            display: inline-block;
-            width: 100%;
-        }
         .hero-text-container {
             display: flex;
             justify-content: center;
@@ -197,11 +200,11 @@ section {
         align-items: center;
     }
     .image-column {
-        gap: 3rem;
+        gap: 5rem;
         flex-basis: 50%;
         img {
             display: inline-block;
-            width: 70%;
+            width: 80%;
         }
     }
     .single-image {
@@ -214,6 +217,34 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: flex-start;
+        &:last-of-type {
+            align-items: flex-end;
+        }
+    }
+    
+}
+
+#office-images {
+    padding: 15rem 0;
+    position: relative;
+    .max-width-img-container {
+        width: 93%;
+        align-self: flex-end;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
+        img {
+            width: 40%;
+        }
+    }
+    &::before {
+        content: "";
+        top: 0;
+        left: 15%;
+        background: $purple;
+        width: 70%;
+        height: 100%;
+        position: absolute;
     }
 }

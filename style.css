@@ -15,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: inline-block;
+  width: 100%;
+}
+
 .main-container {
   width: 85vw;
   margin: 0 auto;
@@ -106,10 +111,6 @@ section {
 #hero .hero-img-container {
   margin-bottom: 5rem;
 }
-#hero .hero-img-container img {
-  display: inline-block;
-  width: 100%;
-}
 #hero .hero-img-container .hero-text-container {
   display: flex;
   justify-content: center;
@@ -183,12 +184,12 @@ section {
   align-items: center;
 }
 #three-pictures .image-column {
-  gap: 3rem;
+  gap: 5rem;
   flex-basis: 50%;
 }
 #three-pictures .image-column img {
   display: inline-block;
-  width: 70%;
+  width: 80%;
 }
 #three-pictures .single-image {
   flex-basis: 50%;
@@ -200,5 +201,32 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+}
+#three-pictures .image-container:last-of-type {
+  align-items: flex-end;
+}
+
+#office-images {
+  padding: 15rem 0;
+  position: relative;
+}
+#office-images .max-width-img-container {
+  width: 93%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+#office-images .max-width-img-container img {
+  width: 40%;
+}
+#office-images::before {
+  content: "";
+  top: 0;
+  left: 15%;
+  background: #d5b3ff;
+  width: 70%;
+  height: 100%;
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */
