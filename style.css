@@ -61,4 +61,19 @@ nav .right-nav {
 nav .right-nav #try-live {
   font-size: 1.2rem;
   color: #0000ff;
+}
+
+.dropdown {
+  font-weight: 500;
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.dropdown #about-btn {
+  color: #ff764d;
 }/*# sourceMappingURL=style.css.map */
